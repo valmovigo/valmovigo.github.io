@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #111827; /* Dark background */
+    color: #E5E7EB;
+    overflow-x: hidden;
+}
+
+.hero-bg {
+    /* Hero image section */
+    background-image: url('https://raw.githubusercontent.com/luciamarock/luciamarock.github.io/main/PerceptrumDuo/content/images/body_of_works.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Subtle dark overlay */
+}
+
+/* Scroll Reveal Effect Styling */
+.reveal-element {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    will-change: opacity, transform;
+}
+.reveal-element.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Custom Button Style */
+.cta-button {
+    transition: all 0.3s ease;
+}
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px rgba(255, 255, 255, 0.1);
+}
+
