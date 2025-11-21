@@ -9,7 +9,7 @@ body {
 
 .hero-bg {
     /* Hero image section */
-    background-image: url('https://raw.githubusercontent.com/luciamarock/luciamarock.github.io/main/PerceptrumDuo/content/images/body_of_works.png');
+    background-image: url('./images/Banner.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
