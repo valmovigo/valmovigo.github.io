@@ -1,0 +1,8 @@
+# robots.txt for perceptrum.net
+
+User-agent: *
+Disallow: /backups/
+Disallow: /HTML_examples/
+
+Sitemap: https://www.perceptrum.net/sitemap.xml
+
