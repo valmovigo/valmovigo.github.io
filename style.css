@@ -9,7 +9,7 @@ body {
 
 .hero-bg {
     /* Hero image section */
-    background-image: url('./images/Banner.jpg');
+    background-image: url('./images/Banner.png');
     background-size: cover;
     background-position: center;
     position: relative;
