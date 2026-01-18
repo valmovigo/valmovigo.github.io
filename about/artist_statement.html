@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perceptrum² - Artist Statement</title>
+    <!-- Favicon - Ensure this path is correct -->
+    <link rel="icon" href="../favicon/logo.jpg" type="image/jpeg">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.perceptrum.net/",
+      "name": "Perceptrum²",
+      "alternateName": "Perceptrum2",
+      "description": "Artistic duo creating Sounding Canvas, interactive paintings that transform touch into sound. Team: Dora Motèque & Luciano Ciamarone.",
+      "url": "https://www.perceptrum.net/",
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q136547945",
+        "https://www.instagram.com/perceptrumduo/",
+        "https://www.youtube.com/@perceptrumduo"
+      ],
+      "member": [
+        {
+          "@type": "Person",
+          "name": "Dora Motèque",
+          "role": "Artist, Designer",
+          "url": "https://doramoteque-faf94c.webflow.io/"
+        },
+        {
+          "@type": "Person",
+          "name": "Luciano Ciamarone",
+          "role": "Artist, Physicist, Sound Designer",
+          "url": "https://luciamarock.github.io/"
+        }
+      ]
+    },
+
+    {
+      "@type": "CreativeWork",
+      "@id": "https://www.perceptrum.net/projects/sounding-canvas.html",
+      "name": "Sounding Canvas",
+      "alternateName": ["Interactive Painting", "Painting with Sound", "Interactive Artwork"],
+      "creator": { "@id": "https://www.perceptrum.net/" },
+      "description": "Sounding Canvas is a series of interactive paintings that map touch and image features to evolving soundscapes using capacitive sensors, machine learning and networked WebSocket communication.",
+      "url": "https://www.perceptrum.net/projects/sounding-canvas.html",
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q136547884"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Sounding-canvas-preview.jpg",
+      "inLanguage": "en",
+      "keywords": "interactive art, sound art, tactile painting, multimedia installation, new media art, interactive painting, paint with music", 
+    },
+
+    {
+      "@type": "WebSite",
+      "url": "https://www.perceptrum.net/",
+      "name": "Perceptrum Duo website",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/1/16/Sounding-canvas-preview.jpg",
+      "publisher": { "@id": "https://www.perceptrum.net/" }
+    }
+  ]
+}
+</script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Customizing Tailwind colors for consistency */
+            --color-primary-yellow: #FFD700; /* Gold/Yellow */
+            --color-text-black: #1A1A1A; /* Darker black for better contrast */
+            --color-bg-white: #FFFFFF;
+        }
+        /* Ensure images fill their container while maintaining aspect ratio */
+        .content-image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 0.5rem; /* Rounded corners for images */
+        }
+        /* Custom border for sections on hover, matching the yellow theme */
+        .section-hover-border:hover {
+            border-color: var(--color-primary-yellow);
+        }
+        /* Style for the "More" button (if used on this page for navigation back) */
+        .more-button {
+            display: inline-block;
+            background-color: var(--color-primary-yellow);
+            color: var(--color-text-black);
+            padding: 0.75rem 2rem;
+            border-radius: 9999px; /* Fully rounded */
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .more-button:hover {
+            background-color: #FFEA00; /* Slightly lighter yellow on hover */
+            transform: translateY(-2px); /* Slight lift effect */
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-white text-black min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="w-full p-4 bg-white shadow-md">
+        <nav class="container mx-auto flex justify-between items-center">
+            <!-- Link back to English homepage or a general home if you prefer -->
+            <a href="https://linktr.ee/perceptrum" class="text-2xl font-bold text-black">Perceptrum<sup>2</sup></a>
+            <!-- Language Switcher (Optional - you might want to link back to chooseLanguage.html or have direct switches) -->
+        </nav>
+    </header>
+
+    <!-- Main Content Area - FILL THIS SECTION WITH YOUR "MORE" INFORMATION -->
+    <main class="flex-grow container mx-auto p-4 md:p-8">
+
+        <section class="mb-16 p-6 border-2 border-black rounded-lg shadow-lg section-hover-border">
+            <h1 class="text-4xl md:text-5xl font-bold mb-8 text-center text-yellow-500">Perceptrum - Sounding Canvas: Artist Statement</h1>
+
+            <div class="text-lg leading-relaxed space-y-6">
+                <p>
+                    Perceptrum is the collaborative vision of Dora Motèque and Luciano Ciamarone, a duo whose work explores the profound intersection of sound, image, and human perception. Our name, Perceptrum, is a direct homage to our individual academic journeys, which laid the foundation for our artistic practice. Dora, after graduating in engineering, pursued her passion for scenography and art in Italy, while Luciano, a physicist by training, dedicated himself to music, and currently works as a software engineer. Both were drawn to the relationship between visual and sonic input and human perception, with their respective theses titled, "A Study on the Use of Color in Film Scenography, its Meaning and its Effects on Visual Perception," and "Research and Exploration of Some of the Factors that Most Influence People in their Idea of Musicality and their Approach to Listening." This shared academic past is the very core of our artistic identity.
+                </p>
+                <p>
+                    Our core works, the Sounding Canvases, are a fusion of art, sound, and technology. Visually, each painting is the result of Dora's semiographic research, in which she intricately weaves Persian characters with music notation. This synthesis is a deeply personal metaphor for her own life, the Persian script representing her Iranian origins, and the music notation symbolizing Luciano's influence. This formal procedure serves as a new syntax, paving the way for a new semantics that is defined by holistic, multi-sensory engagement. The paintings are not fully abstract; rather, they are a new language emerging from the entire experience of their fruition.
+                </p>
+                <p>
+                    Beyond their visual language, the geometric shapes on each canvas are designed to be tactile. They differ in roughness and sensation, inviting touch, which is made possible by an invisible layer of capacitive sensors hidden behind the canvas. When touched, the canvases respond with sound, but not in a simple, predictable manner. Instead, advanced AI algorithms govern a dynamic dialogue with the user. Machine learning is employed to track gestures and account for the "history of interactions," meaning that if you touch the same spot, the canvas will not always respond with the same sound. This turns the canvases into true "interlocutors" that respond based on the succession of past interactions. Furthermore, the location of your touch directly commands the localization of the sound, and the entire audio system operates autonomously, reacting solely to your touch.
+                </p>
+                <p>
+                    We refer to our Sounding Canvases as "Social Artworks" because they transcend physical space and connect with others anywhere in the world. Each canvas can communicate with others via the internet, allowing a touch event on one canvas to immediately affect the soundscape of all others. This is best exemplified by a moment captured on our YouTube channel, where Luciano in Barcelona interacts with his mother in Italy, connecting at a distance through the Sounding Canvases. Her touch on a canvas in Italy triggers a sound in Barcelona, which Luciano hears and responds to with his own touch, in turn activating a sound on her canvas. This unique networked system allows us to connect people through the universal and intimate languages of sound and touch, challenging the traditional boundaries of art and opening the door to emotional narratives and new forms of expression.
+                </p>
+                <a href="https://github.com/luciamarock/SoundingCanvas" target="_blank" class="text-yellow-500 hover:underline font-bold">Sounding Canvas </a> © 2024 by <a href="https://luciamarock.github.io/" target="_blank" class="text-yellow-500 hover:underline font-bold">Luciano Ciamarone</a> and <a href="https://doramoteque-faf94c.webflow.io/" target="_blank" class="text-yellow-500 hover:underline font-bold">Dora Motèque</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" class="text-black hover:text-yellow-500">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+
+
+                <!-- <h3 class="text-2xl font-bold mt-8 mb-4 text-black">Behind the Scenes</h3>
+                <p>
+                    Discover the process of creating a Sounding Canvas, from initial concept sketches to the intricate integration of technology. Learn about the materials, techniques, and challenges involved in bringing these unique artworks to life.
+                </p> -->
+
+                <!-- You can add more sections as needed -->
+
+            </div>
+        </section>
+
+        <!-- Optional: Back to Home Button -->
+        <section class="flex justify-center mt-16">
+            <a href="https://linktr.ee/perceptrum" class="more-button">Back to Home</a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full p-4 bg-black text-white text-center text-sm mt-auto">
+        <p>&copy; 2024 Perceptrum Duo. All rights reserved.</p>
+        <!-- Add links here if needed -->
+        <div class="mt-2">
+            <a href="https://www.youtube.com/@perceptrumduo" class="text-yellow-500 hover:underline mx-2" target="_blank" rel="me">YouTube</a>
+            <a href="https://doramoteque-faf94c.webflow.io/contact" target="_blank" class="text-yellow-500 hover:underline mx-2">Contact</a>
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" class="text-yellow-500 hover:underline mx-2">Privacy Policy</a>
+        </div>
+    </footer>
+
+</body>
+</html>
+
