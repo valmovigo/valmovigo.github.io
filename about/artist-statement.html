@@ -31,11 +31,12 @@
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://www.perceptrum.net/",
+      "@id": "https://www.perceptrum.net/#organization",
       "name": "Perceptrum²",
       "alternateName": "Perceptrum2",
       "description": "Artistic duo creating Sounding Canvas, interactive paintings that transform touch into sound. Team: Dora Motèque & Luciano Ciamarone.",
       "url": "https://www.perceptrum.net/",
+      "logo": "https://www.perceptrum.net/favicon/logo.jpg",
       "sameAs": [
         "https://www.wikidata.org/wiki/Q136547945",
         "https://www.instagram.com/perceptrumduo/",
@@ -45,24 +46,23 @@
         {
           "@type": "Person",
           "name": "Dora Motèque",
-          "role": "Artist, Designer",
+          "jobTitle": "Artist, Designer",
           "url": "https://doramoteque-faf94c.webflow.io/"
         },
         {
           "@type": "Person",
           "name": "Luciano Ciamarone",
-          "role": "Artist, Physicist, Sound Designer",
+          "jobTitle": "Artist, Physicist, Sound Designer",
           "url": "https://luciamarock.github.io/"
         }
       ]
     },
-
     {
       "@type": "CreativeWork",
-      "@id": "https://www.perceptrum.net/projects/sounding-canvas.html",
+      "@id": "https://www.perceptrum.net/projects/sounding-canvas.html#artwork",
       "name": "Sounding Canvas",
       "alternateName": ["Interactive Painting", "Painting with Sound", "Interactive Artwork"],
-      "creator": { "@id": "https://www.perceptrum.net/" },
+      "creator": { "@id": "https://www.perceptrum.net/#organization" },
       "description": "Sounding Canvas is a series of interactive paintings that map touch and image features to evolving soundscapes using capacitive sensors, machine learning and networked WebSocket communication.",
       "url": "https://www.perceptrum.net/projects/sounding-canvas.html",
       "sameAs": [
@@ -70,15 +70,14 @@
       ],
       "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Sounding-canvas-preview.jpg",
       "inLanguage": "en",
-      "keywords": "interactive art, sound art, tactile painting, multimedia installation, new media art, interactive painting, paint with music", 
+      "keywords": "interactive art, sound art, tactile painting, multimedia installation, new media art, interactive painting, paint with music"
     },
-
     {
       "@type": "WebSite",
+      "@id": "https://www.perceptrum.net/#website",
       "url": "https://www.perceptrum.net/",
       "name": "Perceptrum Duo website",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/1/16/Sounding-canvas-preview.jpg",
-      "publisher": { "@id": "https://www.perceptrum.net/" }
+      "publisher": { "@id": "https://www.perceptrum.net/#organization" }
     }
   ]
 }
