@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Perceptrum²</title>
+    <link rel="icon" href="../favicon/logo.jpg" type="image/jpeg">
+    
+    <meta name="description" content="Meet Perceptrum², the artistic duo of Dora Motèque and Luciano Ciamarone. Discover their background in engineering, physics, and the arts that led to the creation of the Sounding Canvas.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://www.perceptrum.net/#dora",
+          "name": "Dora Motèque",
+          "jobTitle": "Artist, Designer",
+          "knowsAbout": ["Scenography", "Engineering", "Semiographics"]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://www.perceptrum.net/#luciano",
+          "name": "Luciano Ciamarone",
+          "jobTitle": "Artist, Physicist, Sound Designer",
+          "knowsAbout": ["Physics", "Augmented Musical Instruments", "Software Engineering"]
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://www.perceptrum.net/#organization",
+          "name": "Perceptrum²",
+          "url": "https://www.perceptrum.net/",
+          "member": [
+            { "@id": "https://www.perceptrum.net/#dora" },
+            { "@id": "https://www.perceptrum.net/#luciano" }
+          ]
+        },
+        {
+          "@type": "AboutPage",
+          "@id": "https://www.perceptrum.net/about/",
+          "url": "https://www.perceptrum.net/about/",
+          "name": "About Perceptrum²",
+          "mainEntity": { "@id": "https://www.perceptrum.net/#organization" }
+        }
+      ]
+    }
+    </script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="bg-gray-900 text-gray-300 min-h-screen flex flex-col font-['Inter']">
+
+    <header class="relative z-10 p-4 bg-transparent">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="../index.html" class="text-3xl font-extrabold text-white tracking-wider">Perceptrum<sup>2</sup></a>
+            <a href="https://luciamarock.github.io/PerceptrumDuo/content/engHomepage.html" class="text-yellow-500 hover:text-white transition uppercase text-sm font-bold tracking-widest">Overview</a>
+        </nav>
+    </header>
+
+    <main class="flex-grow container mx-auto p-4 md:p-8 max-w-4xl">
+
+        <section class="mb-16 p-6 reveal-element">
+            <h1 class="text-4xl md:text-5xl font-bold mb-12 text-center text-yellow-500">About Perceptrum</h1>
+
+            <div class="text-lg leading-relaxed space-y-8 text-gray-300">
+                
+                <p>
+                    <strong>Perceptrum²</strong> is the collaborative vision of <strong>Dora Motèque</strong> and <strong>Luciano Ciamarone</strong>, a duo whose work explores the profound intersection of sound, image, and human perception. Our name is a direct homage to our individual academic journeys, which laid the foundation for our artistic practice.
+                </p>
+
+                <p>
+                    Dora, after graduating in engineering, pursued her passion for scenography and art in Italy, while Luciano, a physicist by training, dedicated himself to music and currently works as a software engineer. Both were drawn to the relationship between visual and sonic input and human perception. This shared academic past is the very core of our artistic identity, rooted in our respective research: <em>"A Study on the Use of Color in Film Scenography"</em> (Dora) and <em>"Factors Influencing the Perception of Musicality and Listening"</em> (Luciano).
+                </p>
+
+                <p>
+                    Originally meeting in Rome in 2013, we now live and create in <strong>Barcelona, Spain</strong>. It is here that we continue to develop the <strong>Sounding Canvas</strong>, an ongoing evolution of the studio tradition that challenges the traditional boundaries of human expression and establishes a new responsive medium for global connection.
+                </p>
+
+            </div>
+        </section>
+
+        <section class="flex flex-col items-center justify-center mt-12 mb-16 space-y-6">
+            <p class="text-gray-400 italic text-center max-w-md">
+                To understand the philosophical repositioning of our work and the paradigm of the Sounding Canvas:
+            </p>
+            <a href="artist-statement.html" class="bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-bold py-3 px-8 rounded-full transition-all uppercase tracking-widest text-sm shadow-lg">Read Artist Statement</a>
+        </section>
+
+    </main>
+
+    <footer class="w-full p-8 bg-gray-900 border-t border-gray-800 text-center text-sm mt-auto">
+        <div class="container mx-auto">
+            <p>&copy; 2024 Perceptrum Duo. Barcelona, Spain.</p>
+            <div class="mt-4 flex justify-center gap-6">
+                <a href="https://www.youtube.com/@perceptrumduo" class="text-yellow-500 hover:text-white transition" target="_blank">YouTube</a>
+                <a href="https://www.instagram.com/perceptrumduo/" class="text-yellow-500 hover:text-white transition" target="_blank">Instagram</a>
+                <a href="mailto:perceptrum@artlover.com" class="text-yellow-500 hover:text-white transition">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
