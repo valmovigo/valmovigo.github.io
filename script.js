@@ -19,4 +19,26 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(element);
     });
 });
+const menuBtn = document.getElementById('menu-btn');
+const closeBtn = document.getElementById('close-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+const menuLinks = mobileMenu.querySelectorAll('a');
 
+// Open Menu
+menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('hidden');
+    document.body.style.overflow = 'hidden'; // Stop scrolling when menu is open
+});
+
+// Close Menu
+const closeMenu = () => {
+    mobileMenu.classList.add('hidden');
+    document.body.style.overflow = 'auto'; // Re-enable scrolling
+};
+
+closeBtn.addEventListener('click', closeMenu);
+
+// Close menu when a link is clicked (important for the #contact anchor)
+menuLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+});
