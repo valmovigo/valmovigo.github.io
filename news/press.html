@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sounding Canvas - Press & Academic</title>
+    <link rel="icon" href="../favicon/logo.jpg" type="image/jpeg">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../style.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VisualArtwork",
+      "name": "Sounding Canvas",
+      "creator": [
+        {
+          "@type": "Person",
+          "name": "Dora Motèque",
+          "role": "Artist, Designer",
+          "url": "https://doramoteque-faf94c.webflow.io/"
+        },
+        {
+          "@type": "Person",
+          "name": "Luciano Ciamarone",
+          "role": "Artist, Physicist, Sound Designer",
+          "url": "https://luciamarock.github.io/"
+        }
+      ],
+      "artform": ["Interactive painting", "Augmented Painting"],
+      "description": "Interactive paintings equipped with touch sensors that respond with sound, allowing global networked interaction.",
+      "url": "https://www.perceptrum.net/projects/sounding-canvas"
+    }
+    </script>
+</head>
+
+<body class="bg-gray-900 text-gray-200 font-['Inter']">
+
+    <header class="relative z-10 p-4 bg-transparent">
+        <nav class="flex justify-between items-center max-w-7xl mx-auto">
+            <a href="../index.html" class="text-3xl font-extrabold text-white tracking-wider">Perceptrum²</a>
+            <div class="flex space-x-6 text-sm font-bold uppercase tracking-widest">
+                <a href="../index.html" class="text-gray-400 hover:text-yellow-500 transition">Home</a>
+                <a href="../about/index.html" class="text-gray-400 hover:text-yellow-500 transition">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="py-16 px-4">
+        <div class="max-w-4xl mx-auto space-y-20">
+
+            <section class="reveal-element">
+                <h2 class="text-4xl font-bold text-yellow-500 mb-8 border-b border-yellow-500/20 pb-4">Press Coverage</h2>
+                <p class="text-lg text-gray-400 mb-10 italic">Featured coverage of the Sounding Canvas project and the Perceptrum duo.</p>
+
+                <ul class="space-y-8">
+                    <li class="group">
+                        <a href="http://snakebitedizioni.altervista.org/perceptrum-sounding-canvas.html?cb=1755194453555" target="_blank" class="text-xl font-bold text-white group-hover:text-yellow-500 transition block mb-2">
+                            Perceptrum - Sounding Canvas (General Article)
+                        </a>
+                        <span class="block text-yellow-500/70 text-sm font-semibold uppercase tracking-wider mb-2">Source: Snakebite Edizioni</span>
+                        <p class="text-gray-400">An Italian-language article presenting the Perceptrum duo and their artistic research behind the Sounding Canvas series.</p>
+                    </li>
+
+                    <li class="group border-t border-gray-800 pt-8">
+                        <a href="http://snakebitedizioni.altervista.org/perceptrum-press-release.html?cb=1762434868925" target="_blank" class="text-xl font-bold text-white group-hover:text-yellow-500 transition block mb-2">
+                            Perceptrum - Press Release (IEEE 2025 & Berlin Science Week)
+                        </a>
+                        <span class="block text-yellow-500/70 text-sm font-semibold uppercase tracking-wider mb-2">Source: Snakebite Edizioni</span>
+                        <p class="text-gray-400">English-language press release introducing the Sounding Canvas project to the international audience following the IEEE 2025 presentation.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="reveal-element bg-gray-800/30 p-8 rounded-xl border border-yellow-500/10">
+                <h2 class="text-4xl font-bold text-yellow-500 mb-8 pb-4">Academic Contributions</h2>
+                <p class="text-gray-300 leading-relaxed mb-8">
+                    Perceptrum’s artistic research is grounded in peer-reviewed work at the intersection of sound art, human–computer interaction, and embedded systems.
+                </p>
+
+                <div class="group">
+                    <a href="https://doi.org/10.1109/IS264627.2025.11284659" target="_blank" class="text-xl font-bold text-white group-hover:text-yellow-500 transition block mb-2">
+                        Sounding Canvas: An Embedded, Networked, Interactive Audio Artwork
+                    </a>
+                    <span class="block text-yellow-500/70 text-sm font-semibold uppercase mb-2">2025 IEEE 6th International Symposium on the Internet of Sounds (IS2)</span>
+                    <p class="text-gray-400">Peer-reviewed conference paper documenting the networked architecture, touch sensing, and machine learning systems behind our interactive artworks.</p>
+                </div>
+            </section>
+
+            <section class="reveal-element">
+                <h2 class="text-4xl font-bold text-yellow-500 mb-8 border-b border-yellow-500/20 pb-4">Technical Discussions</h2>
+                <p class="text-gray-400 mb-10">Exploration of hardware implementation and community dialogues regarding our technical architectures.</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="p-4 border-l-2 border-gray-700 hover:border-yellow-500 transition">
+                        <a href="https://forums.raspberrypi.com/viewtopic.php?p=2344395&hilit=sounding+canvas#p2344395" target="_blank" class="text-white hover:text-yellow-500 font-bold block mb-2">Raspberry Pi Forum</a>
+                        <p class="text-sm text-gray-500">Discussion on audio processing and control systems.</p>
+                    </div>
+                    <div class="p-4 border-l-2 border-gray-700 hover:border-yellow-500 transition">
+                        <a href="https://support.hifiberry.com/hc/en-us/community/posts/31200976766749" target="_blank" class="text-white hover:text-yellow-500 font-bold block mb-2">HiFiBerry Community</a>
+                        <p class="text-sm text-gray-500">Integrating high-quality audio output hardware.</p>
+                    </div>
+                    <div class="p-4 border-l-2 border-gray-700 hover:border-yellow-500 transition">
+                        <a href="https://forum.arduino.cc/t/using-arduino-to-bring-paintings-to-life-the-sounding-canvas-project/1410216" target="_blank" class="text-white hover:text-yellow-500 font-bold block mb-2">Arduino Forum</a>
+                        <p class="text-sm text-gray-500">Sensor data acquisition and signal interfacing.</p>
+                    </div>
+                    <div class="p-4 border-l-2 border-gray-700 hover:border-yellow-500 transition">
+                        <a href="https://perceptrumduo.medium.com/how-we-did-our-first-sounding-canvas-a4b11cc3d6a8" target="_blank" class="text-white hover:text-yellow-500 font-bold block mb-2">Medium Case Study</a>
+                        <p class="text-sm text-gray-500">Narrative of the first prototype creation process.</p>
+                    </div>
+                    <div class="p-4 border-l-2 border-gray-700 hover:border-yellow-500 transition">
+                        <a href="https://www.behance.net/gallery/237756861/Sounding-Canvas-Perceptrum" target="_blank" class="text-white hover:text-yellow-500 font-bold block mb-2">Behance Portfolio</a>
+                        <p class="text-sm text-gray-400">Official project showcase featuring high-resolution images, video demonstrations, and process details.</p>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="pt-16 border-t border-gray-800 text-center">
+                <a href="../projects/sounding-canvas.html" class="inline-flex items-center text-yellow-500 hover:text-white font-bold transition uppercase tracking-widest text-sm">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+                    Back to Project Page
+                </a>
+            </footer>
+
+        </div>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>
