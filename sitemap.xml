@@ -9,80 +9,80 @@
     </url>
     
     <url>
-        <loc>https://www.perceptrum.net/about/</loc>
+        <loc>https://www.perceptrum.net/manifesto/</loc>
         <lastmod>2026-02-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.80</priority>
     </url>
 
     <url>
-        <loc>https://www.perceptrum.net/about/artist-statement.html</loc>
+        <loc>https://www.perceptrum.net/manifesto/artist-statement.html</loc>
         <lastmod>2026-02-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     
     <url>
-        <loc>https://www.perceptrum.net/news/</loc>
+        <loc>https://www.perceptrum.net/chronicle/</loc>
         <lastmod>2026-02-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.80</priority>
     </url>
 
     <url>
-        <loc>https://www.perceptrum.net/news/press.html</loc>
+        <loc>https://www.perceptrum.net/chronicle/press.html</loc>
         <lastmod>2026-02-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
 
     <url>
-        <loc>https://www.perceptrum.net/news/exhibitions.html</loc>
+        <loc>https://www.perceptrum.net/chronicle/exhibitions.html</loc>
         <lastmod>2026-02-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
 <url>
-  <loc>https://www.perceptrum.net/news/installations.html</loc>
+  <loc>https://www.perceptrum.net/chronicle/installations.html</loc>
   <changefreq>monthly</changefreq>
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://www.perceptrum.net/news/performances.html</loc>
+  <loc>https://www.perceptrum.net/chronicle/performances.html</loc>
   <changefreq>monthly</changefreq>
   <priority>0.7</priority>
 </url>
     
     <url>
-        <loc>https://www.perceptrum.net/projects/</loc>
+        <loc>https://www.perceptrum.net/works/</loc>
         <lastmod>2026-02-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.80</priority>
     </url>
     
     <url>
-        <loc>https://www.perceptrum.net/projects/sounding-canvas.html</loc>
+        <loc>https://www.perceptrum.net/works/sounding-canvas.html</loc>
         <lastmod>2026-02-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     
     <url>
-        <loc>https://www.perceptrum.net/projects/sounding-canvas-series.html</loc>
+        <loc>https://www.perceptrum.net/works/sounding-canvas-series.html</loc>
         <lastmod>2026-03-14</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
 
     <url>
-        <loc>https://www.perceptrum.net/projects/sounding-stage.html</loc>
+        <loc>https://www.perceptrum.net/works/sounding-stage.html</loc>
         <lastmod>2026-02-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     
     <url>
-        <loc>https://www.perceptrum.net/projects/sounding-stage-premiere.html</loc>
+        <loc>https://www.perceptrum.net/works/sounding-stage-premiere.html</loc>
         <lastmod>2026-04-11</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
