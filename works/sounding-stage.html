@@ -36,6 +36,13 @@
 {
   "@context": "https://schema.org",
   "@graph": [
+  {
+      "@type": "Organization",
+      "@id": "https://www.perceptrum.net/#organization",
+      "name": "Perceptrum²",
+      "url": "https://www.perceptrum.net/",
+      "sameAs": "https://www.wikidata.org/wiki/Q136547945"
+    },
     {
       "@type": "CreativeWork",
       "@id": "https://www.perceptrum.net/works/sounding-stage.html",
@@ -44,7 +51,7 @@
       "sameAs": "https://www.wikidata.org/wiki/Q137104746",
       "description": "A proprietary interactive scenic technology platform. It utilizes a dual-plane capacitive sensing architecture to translate corporeal presence into real-time electroacoustic control data.",
       "creator": {
-        "@id": "https://www.perceptrum.net/"
+        "@id": "https://www.perceptrum.net/#organization"
       },
       "keywords": [
         "Interactive Stage",
@@ -77,9 +84,38 @@
       "@id": "https://www.perceptrum.net/works/sounding-stage.html",
       "url": "https://www.perceptrum.net/works/sounding-stage.html",
       "name": "Perceptrum² | Sounding Stage Technology",
-      "breadcrumb": "Home > Works > Sounding Stage",
-      "isPartOf": { "@id": "https://www.perceptrum.net/" }
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://www.perceptrum.net/"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sounding_Stage_interactive_scenography_by_Perceptrum.jpg"
+      }
+    },
+    {
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.perceptrum.net/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Works",
+      "item": "https://www.perceptrum.net/works/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Sounding Stage",
+      "item": "https://www.perceptrum.net/works/sounding-stage.html"
     }
+  ]
+}
   ]
 }
 </script>
@@ -96,12 +132,13 @@
     <!-- HEADER -->
     <header class="relative z-10 p-4 bg-transparent">
         <nav class="flex justify-between items-center max-w-7xl mx-auto">
-            <h1 class="text-3xl font-extrabold text-white tracking-wider rounded-lg p-1">
-                Perceptrum²
-            </h1>
+            <a href="/" class="text-3xl font-extrabold text-white tracking-wider">
+    Perceptrum²
+</a>
 
             <div class="flex space-x-6 text-lg font-medium">
                 <a href="/" class="text-gray-300 hover:text-yellow-500 transition duration-300">Home</a>
+                <a href="index.html" class="text-gray-300 hover:text-yellow-500 transition duration-300">Works</a>
             </div>
         </nav>
     </header>
@@ -109,10 +146,11 @@
 <!-- MAIN CONTENT -->
 <main class="py-20">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
-
+            <h1 class="text-4xl md:text-5xl font-bold text-yellow-500 mb-8">Sounding Stage</h1>
+<p class="text-gray-400 text-sm mt-10 border-t border-gray-800 pt-6">
+Sounding Stage extends the relational logic of Sounding Canvas into architectural scale.</p>
         <!-- PAGE TITLE -->
         <section class="reveal-element">
-            <h1 class="text-4xl md:text-5xl font-bold text-yellow-500 mb-8">Sounding Stage</h1>
             <div class="flex flex-col md:flex-row gap-10 items-start">
 
     <!-- IMAGE SIDE -->
