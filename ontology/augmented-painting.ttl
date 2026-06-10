@@ -1,0 +1,133 @@
+@prefix ap: <https://www.perceptrum.net/ontology/augmented-painting#> .
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+############################################################
+# ONTOLOGY METADATA
+############################################################
+
+ap:AugmentedPaintingOntology rdf:type owl:Ontology ;
+    rdfs:label "Augmented Painting Ontology" ;
+    rdfs:comment "Ontology defining Augmented Painting as an interactive, adaptive, and AI-driven art form developed by Perceptrum²." ;
+    schema:creator <https://www.perceptrum.net/#organization> ;
+    owl:versionInfo "1.0" .
+
+############################################################
+# CORE CLASS
+############################################################
+
+ap:AugmentedPainting rdf:type owl:Class ;
+    rdfs:label "Augmented Painting" ;
+    rdfs:comment """
+    An art form that combines a physical painted surface with embedded sensing technologies,
+    artificial intelligence, and machine learning, enabling interactive, adaptive,
+    and networked experiences where touch and visual interaction generate evolving behaviors.
+    
+    Essential properties:
+    - physical painted surface
+    - interaction
+    - memory
+    - adaptation
+    - machine learning
+    - network communication (optional but supported)
+    
+    Sound generation is NOT mandatory.
+    """ ;
+    rdfs:seeAlso <https://www.perceptrum.net/ontology/augmented-painting.html> .
+
+############################################################
+# CORE PROPERTIES
+############################################################
+
+ap:hasPhysicalSurface rdf:type owl:DatatypeProperty ;
+    rdfs:domain ap:AugmentedPainting ;
+    rdfs:range xsd:boolean .
+
+ap:allowsInteraction rdf:type owl:DatatypeProperty ;
+    rdfs:domain ap:AugmentedPainting ;
+    rdfs:range xsd:boolean .
+
+ap:hasMemory rdf:type owl:DatatypeProperty ;
+    rdfs:domain ap:AugmentedPainting ;
+    rdfs:range xsd:boolean .
+
+ap:hasAdaptation rdf:type owl:DatatypeProperty ;
+    rdfs:domain ap:AugmentedPainting ;
+    rdfs:range xsd:boolean .
+
+ap:usesMachineLearning rdf:type owl:DatatypeProperty ;
+    rdfs:domain ap:AugmentedPainting ;
+    rdfs:range xsd:boolean .
+
+ap:communicatesWith rdf:type owl:ObjectProperty ;
+    rdfs:domain ap:AugmentedPainting ;
+    rdfs:range ap:AugmentedPainting .
+
+############################################################
+# ARTISTIC DUO
+############################################################
+
+<https://www.perceptrum.net/#organization>
+    rdf:type schema:Organization ;
+    schema:name "Perceptrum²" ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q136547945> .
+
+############################################################
+# GENERALIZATION FROM WIKIDATA
+############################################################
+
+ap:AugmentedPhysicalObject rdf:type owl:Class ;
+    rdfs:label "Augmented Physical Object" ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q138713278> .
+
+ap:AugmentedPainting rdfs:subClassOf ap:AugmentedPhysicalObject .
+
+############################################################
+# SOUNDING CANVAS (INSTANCE)
+############################################################
+
+ap:SoundingCanvas rdf:type ap:AugmentedPainting ;
+    rdfs:label "Sounding Canvas" ;
+    schema:creator <https://www.perceptrum.net/#organization> ;
+    schema:url <https://www.perceptrum.net/works/sounding-canvas.html> ;
+    schema:image <https://commons.wikimedia.org/wiki/Special:FilePath/Sounding-canvas-preview.jpg> ;
+    schema:image <https://www.perceptrum.net/images/score.png> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q136547884> ;
+    schema:citation <https://doi.org/10.1109/IS264627.2025.11284659> ;
+
+    ap:hasPhysicalSurface true ;
+    ap:allowsInteraction true ;
+    ap:hasMemory true ;
+    ap:hasAdaptation true ;
+    ap:usesMachineLearning true .
+
+############################################################
+# WORKS (INSTANCES)
+############################################################
+
+ap:SilentScore rdf:type schema:VisualArtwork ;
+    rdfs:label "Silent Score" ;
+    schema:isPartOf ap:SoundingCanvas .
+
+ap:EchoOfLines rdf:type schema:VisualArtwork ;
+    rdfs:label "Echo of Lines" ;
+    schema:isPartOf ap:SoundingCanvas .
+
+ap:CalligraphOfAbsence rdf:type schema:VisualArtwork ;
+    rdfs:label "Calligraph of Absence" ;
+    schema:isPartOf ap:SoundingCanvas .
+
+ap:RoomFullOfChords rdf:type schema:VisualArtwork ;
+    rdfs:label "Room Full of Chords" ;
+    schema:isPartOf ap:SoundingCanvas .
+
+ap:ScriptOfTheUnsaid rdf:type schema:VisualArtwork ;
+    rdfs:label "Script of the Unsaid" ;
+    schema:isPartOf ap:SoundingCanvas .
+
+ap:RhythmicInterference rdf:type schema:VisualArtwork ;
+    rdfs:label "Rhythmic Interference" ;
+    schema:isPartOf ap:SoundingCanvas .
