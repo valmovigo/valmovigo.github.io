@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Augmented Painting | Perceptrum² - Interactive AI Art Ontology</title>
 
     <!-- Favicon -->
     <link rel="icon" href="../favicon/logo.jpg" type="image/jpeg">
+    
+    <meta name="title" content="Augmented Painting | Perceptrum² - Interactive AI Art Ontology">
+    <link rel="canonical" href="https://www.perceptrum.net/ontology/augmented-painting.html">
 
+    <!-- Meta Description -->
     <meta name="description" content="Augmented Painting is a new art form created by Perceptrum², combining physical painting, sensors, and artificial intelligence to produce interactive, adaptive, and networked artworks. The first instance is Sounding Canvas.">
 
 <meta name="keywords" content="Augmented Painting, Interactive Art, AI Art, Sensor-based Painting, Perceptrum, Sounding Canvas, Augmented Physical Objects">
-
-<link rel="canonical" href="https://www.perceptrum.net/ontology/augmented-painting.html">
-
+    
     <!-- Open Graph -->
     <meta property="og:type" content="article">
 <meta property="og:title" content="Augmented Painting | Perceptrum² Ontology">
@@ -27,7 +28,7 @@
 <meta name="twitter:title" content="Augmented Painting | Perceptrum²">
 <meta name="twitter:description" content="An AI-driven interactive art form where painting becomes a responsive system.">
 <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/1/16/Sounding-canvas-preview.jpg">
-
+    
 
 <script type="application/ld+json">
 {
@@ -113,40 +114,41 @@
 }
 </script>
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="../style.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Scroll script -->
-    <script defer src="../script.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../style.css">
 </head>
 
-<body>
+<body class="bg-gray-900 text-gray-200">
 
-<!-- HEADER -->
-<header class="relative z-50 p-4 bg-transparent">
-    <nav class="flex justify-between items-center max-w-7xl mx-auto">
-        <a href="/" class="text-3xl font-extrabold text-white tracking-wider">
-            Perceptrum²
-        </a>
+    <!-- HEADER -->
+    <header class="relative z-10 p-4 bg-transparent">
+        <nav class="flex justify-between items-center max-w-7xl mx-auto">
+            <a href="/" class="text-3xl font-extrabold text-white tracking-wider">
+    Perceptrum²
+</a>
 
-        <div class="hidden md:flex space-x-6 text-lg font-medium">
-            <a href="../manifesto/index.html" class="text-gray-300 hover:text-yellow-500 transition duration-300">Manifesto</a>
+            <div class="flex space-x-6 text-lg font-medium">
+                <a href="../manifesto/index.html" class="text-gray-300 hover:text-yellow-500 transition duration-300">Manifesto</a>
             <a href="../works/index.html" class="text-gray-300 hover:text-yellow-500 transition duration-300">Works</a>
             <a href="../research/index.html" class="text-gray-300 hover:text-yellow-500 transition duration-300">Research</a>
-        </div>
-    </nav>
-</header>
+            </div>
+        </nav>
+    </header>
 
-<!-- MAIN -->
-<main class="py-20">
+    <!-- MAIN CONTENT -->
+    <main class="py-20">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
 
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
 
-        <section class="reveal-element">
-            <h1 class="text-4xl font-bold text-yellow-500">
-Augmented Painting
-</h1>
+  <h1 class="text-4xl md:text-5xl font-bold text-yellow-500 mb-8">
+    Augmented Painting
+  </h1>
 
+            <!-- SECTION TEMPLATE -->
+            <section class="reveal-element mt-20">
 <p class="text-lg text-gray-300 leading-relaxed">
 Augmented Painting is a new ontological category in contemporary art created by Perceptrum². It defines a form of painting in which a physical painted surface is extended through sensing technologies and artificial intelligence, enabling interactive, adaptive, and networked behaviours driven by memory and machine learning.
 </p>
@@ -159,108 +161,69 @@ The concept is derived from the broader class of Augmented Physical Objects and 
 Created by Perceptrum² (Dora Motèque and Luciano Ciamarone).
 Contact: <a href="mailto:hello@perceptrum.net" class="text-yellow-500">hello@perceptrum.net</a>
 </p>
-        </section>
-
-        <section class="reveal-element space-y-6">
-
-    <h2 class="text-3xl md:text-4xl font-bold text-yellow-500">
-        The Origin of Perceptrum
-    </h2>
-
-    <p class="text-gray-300 leading-relaxed">
-        The story of Dora Motèque and Luciano Ciamarone is a convergence of visual storytelling, physics, and music. Together, they founded Perceptrum (also known as Perceptrum²), an artistic duo dedicated to redefining the traditional boundaries of artistic experience. Instead of treating painting as a static object observed from a distance, they developed the idea of a <em>surface of relation</em>, an interactive medium that listens, remembers, and responds through touch and sound.
-    </p>
-
-    <h3 class="text-xl font-semibold text-yellow-400">
-        The Convergence of Two Worlds
-    </h3>
-
-    <p class="text-gray-300 leading-relaxed">
-        Before forming Perceptrum, Dora and Luciano came from distinct but complementary creative trajectories.
-    </p>
-
-    <ul class="list-disc list-inside text-gray-300 space-y-3">
-        <li>
-            <strong>Dora Motèque</strong> brought a foundation in human-centered space, narrative, and visual identity. Her work spans symbolic video art exploring identity (such as <em>Paradoxical</em>, 2019) and architectural stage design studies like <em>Turandot</em> (2017), where she investigated how space shapes perception and emotion.
-            <a href="https://luciamarock.github.io/PerceptrumDuo/old_portfolios.html#dora"
-               class="text-yellow-500 hover:text-yellow-400 ml-1">
-               [portfolio]
-            </a>
-        </li>
-
-        <li>
-            <strong>Luciano Ciamarone</strong> works at the intersection of physics and sound. With a background in physics and music, his work spans signal processing, real-time audio analysis, and physics-inspired sonification systems.
-            <a href="https://luciamarock.github.io/PerceptrumDuo/old_portfolios.html#luciano"
-               class="text-yellow-500 hover:text-yellow-400 ml-1">
-               [portfolio]
-            </a>
-        </li>
-    </ul>
-
-    <p class="text-gray-300 leading-relaxed">
-        When their paths crossed, they discovered a shared philosophy: in an increasingly disembodied digital world, physical touch remains a fundamental cultural act. This idea became the foundation of Perceptrum.
-    </p>
-
-    <h3 class="text-xl font-semibold text-yellow-400">
-        The Birth of Augmented Painting
-    </h3>
-
-    <p class="text-gray-300 leading-relaxed">
-        At the end of 2024, they officially formed Perceptrum and launched their flagship project: <a href="https://www.perceptrum.net/works/sounding-canvas.html" target="_blank">Sounding Canvas</a>. They introduced a <a href="https://luciamarock.github.io/PerceptrumDuo/stories/conceptual-foundations-of-augmented-painting.html" target="_blank">“third state of painting”</a> beyond contemplation or passive digital immersion, embedding capacitive sensing, adaptive algorithms, and machine learning directly into tactile surfaces.
-    </p>
-
-    <p class="text-gray-400 font-mono text-sm">
-        Human Touch → Gesture Interpretation → Real-time Algorithmic Sound
-    </p>
-
-    <p class="text-gray-300 leading-relaxed">
-        What distinguishes their work is not only that paintings produce sound, but that they develop memory. Repeating the same gesture does not produce identical results: each interaction is shaped by prior touch history, speed, pressure, and intention, creating a living, non-linear dialogue between human and system.
-    </p>
-
-    <h3 class="text-xl font-semibold text-yellow-400">
-        Connecting Through Networked Paintings
-    </h3>
-
-    <p class="text-gray-300 leading-relaxed">
-        In 2025, Perceptrum expanded into networked installations, connecting multiple Sounding Canvases across different locations. A gesture performed on one canvas can influence another elsewhere, transforming isolated artworks into a distributed sensory system where distant participants communicate through touch and sound.
-    </p>
-
-    <h3 class="text-xl font-semibold text-yellow-400">
-        Expanding Into Space
-    </h3>
-
-    <p class="text-gray-300 leading-relaxed">
-        This research eventually extended into performance environments with <a href="https://www.perceptrum.net/works/sounding-stage.html" target="_blank">Sounding Stage</a>, where entire architectural spaces become instruments. Floors and vertical surfaces respond to movement, proximity, and gesture history, turning performers into co-authors of an evolving sonic environment.
-    </p>
-
-    <p class="text-gray-300 leading-relaxed">
-        The work of Perceptrum remains an ongoing exploration of perception, memory, and human relation, where art and technology merge into systems that learn how to listen.
-    </p>
-
 </section>
 
-    </div>
 
-</main>
 
-<!-- FOOTER -->
-<footer class="bg-gray-800 py-10 mt-20">
-    <div class="max-w-7xl mx-auto px-4 text-center">
 
-        <h4 class="text-xl font-semibold text-white mb-4 reveal-element">
-            Get in Touch
-        </h4>
+        </div>
+    </main>
 
-        <p class="text-gray-400">
-            hello@perceptrum.net
-        </p>
+    <!-- FOOTER -->
+    <footer class="bg-gray-800 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
-        <p class="mt-6 text-sm text-gray-500">
-            © 2024–2026 Perceptrum²
-        </p>
+            <h4 class="text-2xl font-semibold text-white mb-4 reveal-element">Get in Touch</h4>
 
-    </div>
-</footer>
+            <p class="text-gray-400 mb-6 reveal-element">
+                For exhibition inquiries or collaborations:
+                <a href="mailto:hello@perceptrum.net"
+                   class="text-yellow-500 hover:text-yellow-400 font-medium ml-2">
+                    hello@perceptrum.net 
+                </a>
+            </p>
 
+            <!-- Social Icons -->
+            <div class="flex justify-center space-x-6 text-gray-400 text-2xl reveal-element">
+
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/perceptrumduo/"
+                   class="hover:text-yellow-500 transition duration-300"
+                   target="_blank">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2zm-.2 2.7l-.3.2H4.9c-.8 0-1.5.7-1.5 1.5v8.6c0 .8.7 1.5 1.5 1.5h14.2c.8 0 1.5-.7 1.5-1.5V7.6c0-.8-.7-1.5-1.5-1.5H7.6zm.5 1.2c.7 0 1.2.5 1.2 1.2S9 8 8.3 8s-1.2-.5-1.2-1.2.5-1.2 1.2-1.2zm6.2 3.6c-2.3 0-4.2 1.9-4.2 4.2S12.4 18 14.7 18s4.2-1.9 4.2-4.2-1.9-4.2-4.2-4.2zm0 1.5c1.5 0 2.7 1.2 2.7 2.7s-1.2 2.7-2.7 2.7-2.7-1.2-2.7-2.7 1.2-2.7 2.7-2.7z"/>
+                    </svg>
+                </a>
+
+                <!-- YouTube -->
+                <a href="https://www.youtube.com/@perceptrumduo"
+                   class="hover:text-yellow-500 transition duration-300"
+                   target="_blank">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M21.8 8s-.2-1.5-.8-2.2c-.8-.9-1.7-.9-2.1-1C16.5 4.5 12 4.5 12 4.5h-.1s-4.5 0-6.9.3c-.4.1-1.3.1-2.1 1C2.2 6.5 2 8 2 8S1.8 9.7 1.8 11.5v1c0 1.8.2 3.5.2 3.5s.2 1.5.8 2.2c.8.9 1.9.9 2.4 1 1.8.2 7.8.3 7.8.3s4.5 0 6.9-.3c.4-.1 1.3-.1 2.1-1 .6-.7.8-2.2.8-2.2s.2-1.8.2-3.5v-1c0-1.8-.2-3.5-.2-3.5zM10 14.7V8.8l5.3 3-5.3 2.9z"/>
+                    </svg>
+                </a>
+    
+    <!-- Facebook -->
+<a href="https://www.facebook.com/perceptrumduo/"
+   class="hover:text-yellow-500 transition duration-300"
+   aria-label="Facebook"
+   target="_blank">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.7-1.6 1.5V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12"/>
+    </svg>
+</a>
+
+
+            </div>
+
+            <p class="mt-8 text-sm text-gray-500">&copy; 2024–2025 Perceptrum². All rights reserved.</p>
+
+        </div>
+    </footer>
+
+    <!-- Scroll Reveal Script -->
+    <script src="../script.js"></script>
 </body>
 </html>
+
