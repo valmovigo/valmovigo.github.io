@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Room 1 — A Distributed Artwork | Perceptrum²</title>
+
+    <meta name="description"
+          content="Room 1 of the Perceptrum² On-Line Exhibition: a distributed installation of Sounding Canvases connected across geographical space through touch, sound, and interaction.">
+
+    <link rel="icon" href="../../favicon/logo.jpg" type="image/jpeg">
+
+    <link rel="canonical"
+          href="https://www.perceptrum.net/on-line-exhibition/rooms/01-country-b.html">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="../../style.css">
+
+    <style>
+        /*
+         * Exhibition-specific styling
+         */
+
+        .room-image {
+            width: 100%;
+            display: block;
+        }
+
+        .canvas-card {
+            transition:
+                transform 0.4s ease,
+                opacity 0.4s ease;
+        }
+
+        .canvas-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .canvas-card img {
+            transition:
+                transform 0.6s ease,
+                filter 0.6s ease;
+        }
+
+        .canvas-card:hover img {
+            transform: scale(1.015);
+        }
+
+        .pair-label {
+            letter-spacing: 0.18em;
+        }
+
+        .room-divider {
+            width: 60px;
+            height: 1px;
+            background: rgba(234, 179, 8, 0.5);
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+
+<body class="bg-gray-900 text-gray-200">
+
+
+    <!-- HEADER -->
+
+    <header class="relative z-10 p-4 bg-transparent">
+
+        <nav class="flex justify-between items-center max-w-7xl mx-auto">
+
+            <a href="/"
+               class="text-2xl md:text-3xl font-extrabold text-white tracking-wider">
+                Perceptrum²
+            </a>
+
+            <div class="flex space-x-6 text-sm md:text-base font-medium">
+
+                <a href="../index.html"
+                   class="text-gray-400 hover:text-yellow-500 transition">
+                    Exhibition
+                </a>
+
+                <a href="/works/index.html"
+                   class="text-gray-400 hover:text-yellow-500 transition">
+                    Works
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main class="pb-32">
+
+
+        <!-- ROOM INTRODUCTION -->
+
+        <section class="max-w-4xl mx-auto px-6 pt-20 pb-16 text-center reveal-element">
+
+            <p class="text-sm uppercase tracking-[0.3em] text-yellow-500 mb-6">
+                Room 01 · Country B
+            </p>
+
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-8">
+                A Distributed Artwork
+            </h1>
+
+            <div class="room-divider mb-10"></div>
+
+            <p class="text-lg md:text-xl text-gray-400 leading-relaxed">
+                The current Sounding Canvas series is conceived as a distributed installation composed of multiple paintings that can interact with viewers and with each other. Each canvas functions as an independent interactive artwork, capable of establishing a direct sensory dialogue with the person touching it.
+            </p>
+
+            <p class="text-lg md:text-xl text-gray-400 leading-relaxed mt-6">
+                At the same time, the canvases are designed to communicate remotely with other canvases in the series. Through this connection, an interaction taking place in one location can resonate within another artwork elsewhere.
+            </p>
+
+            <p class="text-lg md:text-xl text-gray-400 leading-relaxed mt-6">
+                For this reason, the works are organized in paired relationships. Each pair forms a conceptual and technological link between two paintings, allowing gestures performed in one place to influence the sonic behavior of another.
+            </p>
+
+        </section>
+
+
+        <!-- THE ROOM -->
+
+        <section class="w-full reveal-element">
+
+            <img
+                src="../images/room-01-country-b.jpg"
+                alt="Room 1 of the Perceptrum² On-Line Exhibition showing six Sounding Canvases forming part of a distributed installation"
+                class="room-image"
+            >
+
+        </section>
+
+
+        <!-- CONCEPTUAL TRANSITION -->
+
+        <section class="max-w-3xl mx-auto px-6 pt-32 text-center reveal-element">
+
+            <p class="text-sm uppercase tracking-[0.3em] text-yellow-500 mb-6">
+                Beyond the room
+            </p>
+
+            <h2 class="text-3xl md:text-4xl font-semibold text-white mb-8">
+                The artwork has no single location.
+            </h2>
+
+            <p class="text-lg text-gray-400 leading-relaxed">
+                This structure allows the installation to be presented across multiple exhibition spaces simultaneously, creating a distributed artwork in which distant viewers become indirectly connected through sound, gesture, and interaction.
+            </p>
+
+            <p class="text-lg text-gray-400 leading-relaxed mt-6">
+                In this way, Sounding Canvas expands the idea of a painting from a single object into a networked artistic system, where images, sounds, and human actions form an evolving web of relations.
+            </p>
+
+            <div class="mt-12">
+
+                <a href="../02-touch.html"
+                   class="inline-block text-yellow-500 hover:text-yellow-400
+                          font-semibold tracking-wide transition">
+                    Continue the exhibition →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="bg-gray-800 py-10">
+
+        <div class="max-w-7xl mx-auto px-6 text-center">
+
+            <a href="../index.html"
+               class="text-gray-400 hover:text-yellow-500 transition">
+                ← On-Line Exhibition
+            </a>
+
+            <p class="mt-6 text-sm text-gray-500">
+                &copy; 2024–2026 Perceptrum². All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../../script.js"></script>
+
+</body>
+</html>
