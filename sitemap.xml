@@ -110,5 +110,17 @@
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
 </url>
+    
+<url>
+  <loc>https://www.perceptrum.net/on-line-exhibition/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+    
+<url>
+  <loc>https://www.perceptrum.net/big-events/entangled-variations/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
 
 </urlset>
