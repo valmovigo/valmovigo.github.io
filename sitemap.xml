@@ -88,13 +88,13 @@
 </url>
 
 <url>
-  <loc>https://www.perceptrum.net/research/studies.html</loc>
+  <loc>https://www.perceptrum.net/research/exhibitions.html</loc>
   <changefreq>yearly</changefreq>
   <priority>0.6</priority>
 </url>
 
 <url>
-  <loc>https://www.perceptrum.net/research/texts.html</loc>
+  <loc>https://www.perceptrum.net/research/press.html</loc>
   <changefreq>yearly</changefreq>
   <priority>0.6</priority>
 </url>
