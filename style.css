@@ -25,6 +25,18 @@ body {
     background: rgba(0, 0, 0, 0.4); /* Subtle dark overlay */
 }
 
+.page-intro {
+    position: relative;
+    min-height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 1.5rem;
+    background:
+        radial-gradient(circle at center, rgba(255, 255, 255, 0.04), transparent 60%);
+}
+
 /* Scroll Reveal Effect Styling */
 .reveal-element {
     opacity: 0;
