@@ -16,10 +16,15 @@ ap:AugmentedPaintingOntology rdf:type owl:Ontology ;
     owl:versionInfo "1.0" .
 
 ############################################################
-# CORE CLASS
+# CORE CLASSES & HIERARCHY
 ############################################################
 
+ap:AugmentedPhysicalObject rdf:type owl:Class ;
+    rdfs:label "Augmented Physical Object" ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q138713278> .
+
 ap:AugmentedPainting rdf:type owl:Class ;
+    rdfs:subClassOf ap:AugmentedPhysicalObject ;
     rdfs:label "Augmented Painting" ;
     rdfs:comment """
     An art form that combines a physical painted surface with embedded sensing technologies,
@@ -38,6 +43,18 @@ ap:AugmentedPainting rdf:type owl:Class ;
     """ ;
     rdfs:seeAlso <https://www.perceptrum.net/ontology/augmented-painting.html>, 
                  <https://www.wikidata.org/wiki/Q137104541> .
+
+ap:SoundingCanvas rdf:type owl:Class ;
+    rdfs:subClassOf ap:AugmentedPainting ;
+    rdfs:label "Sounding Canvas" ;
+    rdfs:comment "A specific class of Augmented Paintings that integrate tactile interaction, embedded acoustic systems, and adaptive machine learning to negotiate sound through physical presence." ;
+    schema:creator <https://www.perceptrum.net/#organization> ;
+    schema:url <https://www.perceptrum.net/works/sounding-canvas.html> ;
+    schema:image <https://commons.wikimedia.org/wiki/Special:FilePath/Sounding-canvas-preview.jpg> , 
+                 <https://www.perceptrum.net/images/score.png> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q136547884> ;
+    schema:citation <https://doi.org/10.1109/IS264627.2025.11284659> ,
+                    <https://www.wikidata.org/wiki/Q137426267> .
 
 ############################################################
 # CORE PROPERTIES
@@ -77,59 +94,59 @@ ap:communicatesWith rdf:type owl:ObjectProperty ;
     rdfs:seeAlso <https://www.wikidata.org/wiki/Q136547945> .
 
 ############################################################
-# GENERALIZATION FROM WIKIDATA
+# WORKS (INSTANCES OF SOUNDING CANVAS)
 ############################################################
 
-ap:AugmentedPhysicalObject rdf:type owl:Class ;
-    rdfs:label "Augmented Physical Object" ;
-    rdfs:seeAlso <https://www.wikidata.org/wiki/Q138713278> .
-
-ap:AugmentedPainting rdfs:subClassOf ap:AugmentedPhysicalObject .
-
-############################################################
-# SOUNDING CANVAS (INSTANCE)
-############################################################
-
-ap:SoundingCanvas rdf:type ap:AugmentedPainting ;
-    rdfs:label "Sounding Canvas" ;
+ap:SilentScore rdf:type ap:SoundingCanvas, schema:VisualArtwork ;
+    rdfs:label "Silent Score" ;
     schema:creator <https://www.perceptrum.net/#organization> ;
-    schema:url <https://www.perceptrum.net/works/sounding-canvas.html> ;
-    schema:image <https://commons.wikimedia.org/wiki/Special:FilePath/Sounding-canvas-preview.jpg> , 
-                 <https://www.perceptrum.net/images/score.png> ;
-    rdfs:seeAlso <https://www.wikidata.org/wiki/Q136547884> ;
-    schema:citation <https://doi.org/10.1109/IS264627.2025.11284659> ,
-                    <https://www.wikidata.org/wiki/Q137426267> ;
-
     ap:hasPhysicalSurface true ;
     ap:allowsInteraction true ;
     ap:hasMemory true ;
     ap:hasAdaptation true ;
     ap:usesMachineLearning true .
 
-############################################################
-# WORKS (INSTANCES)
-############################################################
-
-ap:SilentScore rdf:type schema:VisualArtwork ;
-    rdfs:label "Silent Score" ;
-    schema:isPartOf ap:SoundingCanvas .
-
-ap:EchoOfLines rdf:type schema:VisualArtwork ;
+ap:EchoOfLines rdf:type ap:SoundingCanvas, schema:VisualArtwork ;
     rdfs:label "Echo of Lines" ;
-    schema:isPartOf ap:SoundingCanvas .
+    schema:creator <https://www.perceptrum.net/#organization> ;
+    ap:hasPhysicalSurface true ;
+    ap:allowsInteraction true ;
+    ap:hasMemory true ;
+    ap:hasAdaptation true ;
+    ap:usesMachineLearning true .
 
-ap:CalligraphOfAbsence rdf:type schema:VisualArtwork ;
+ap:CalligraphOfAbsence rdf:type ap:SoundingCanvas, schema:VisualArtwork ;
     rdfs:label "Calligraph of Absence" ;
-    schema:isPartOf ap:SoundingCanvas .
+    schema:creator <https://www.perceptrum.net/#organization> ;
+    ap:hasPhysicalSurface true ;
+    ap:allowsInteraction true ;
+    ap:hasMemory true ;
+    ap:hasAdaptation true ;
+    ap:usesMachineLearning true .
 
-ap:RoomFullOfChords rdf:type schema:VisualArtwork ;
+ap:RoomFullOfChords rdf:type ap:SoundingCanvas, schema:VisualArtwork ;
     rdfs:label "Room Full of Chords" ;
-    schema:isPartOf ap:SoundingCanvas .
+    schema:creator <https://www.perceptrum.net/#organization> ;
+    ap:hasPhysicalSurface true ;
+    ap:allowsInteraction true ;
+    ap:hasMemory true ;
+    ap:hasAdaptation true ;
+    ap:usesMachineLearning true .
 
-ap:ScriptOfTheUnsaid rdf:type schema:VisualArtwork ;
+ap:ScriptOfTheUnsaid rdf:type ap:SoundingCanvas, schema:VisualArtwork ;
     rdfs:label "Script of the Unsaid" ;
-    schema:isPartOf ap:SoundingCanvas .
+    schema:creator <https://www.perceptrum.net/#organization> ;
+    ap:hasPhysicalSurface true ;
+    ap:allowsInteraction true ;
+    ap:hasMemory true ;
+    ap:hasAdaptation true ;
+    ap:usesMachineLearning true .
 
-ap:RhythmicInterference rdf:type schema:VisualArtwork ;
+ap:RhythmicInterference rdf:type ap:SoundingCanvas, schema:VisualArtwork ;
     rdfs:label "Rhythmic Interference" ;
-    schema:isPartOf ap:SoundingCanvas .
+    schema:creator <https://www.perceptrum.net/#organization> ;
+    ap:hasPhysicalSurface true ;
+    ap:allowsInteraction true ;
+    ap:hasMemory true ;
+    ap:hasAdaptation true ;
+    ap:usesMachineLearning true .
