@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ap="https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:schema1="http://schema.org/"
+>
+  <rdf:Description rdf:about="https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#RhythmicInterference">
+    <rdf:type rdf:resource="http://schema.org/VisualArtwork"/>
+    <rdfs:label>Rhythmic Interference</rdfs:label>
+    <schema1:isPartOf rdf:resource="https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#SoundingCanvas"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#ScriptOfTheUnsaid">
+    <rdf:type rdf:resource="http://schema.org/VisualArtwork"/>
+    <rdfs:label>Script of the Unsaid</rdfs:label>
+    <schema1:isPartOf rdf:resource="https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#SoundingCanvas"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#hasAdaptation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPainting"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPainting">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Augmented Painting</rdfs:label>
+    <rdfs:comment>
+    An art form that combines a physical painted surface with embedded sensing technologies,
+    artificial intelligence, and machine learning, enabling interactive, adaptive,
+    and networked experiences where touch and visual interaction generate evolving behaviors.
+    
+    Essential properties:
+    - physical painted surface
+    - interaction
+    - memory
+    - adaptation
+    - machine learning
+    - network communication (optional but supported)
+    
+    Sound generation is NOT mandatory.
+    </rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://www.perceptrum.net/ontology/augmented-painting.html"/>
+    <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q137104541"/>
+    <rdfs:subClassOf rdf:resource="https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPhysicalObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#EchoOfLines">
+    <rdf:type rdf:resource="http://schema.org/VisualArtwork"/>
+    <rdfs:label>Echo of Lines</rdfs:label>
+    <schema1:isPartOf rdf:resource="https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#SoundingCanvas"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#SoundingCanvas">
+    <rdf:type rdf:resource="https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPainting"/>
+    <rdfs:label>Sounding Canvas</rdfs:label>
+    <schema1:creator rdf:resource="https://www.perceptrum.net/#organization"/>
+    <schema1:url rdf:resource="https://www.perceptrum.net/works/sounding-canvas.html"/>
+    <schema1:image rdf:resource="https://commons.wikimedia.org/wiki/Special:FilePath/Sounding-canvas-preview.jpg"/>
+    <schema1:image rdf:resource="https://www.perceptrum.net/images/score.png"/>
+    <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q136547884"/>
+    <schema1:citation rdf:resource="https://doi.org/10.1109/IS264627.2025.11284659"/>
+    <schema1:citation rdf:resource="https://www.wikidata.org/wiki/Q137426267"/>
+    <ap:hasPhysicalSurface rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ap:hasPhysicalSurface>
+    <ap:allowsInteraction rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ap:allowsInteraction>
+    <ap:hasMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ap:hasMemory>
+    <ap:hasAdaptation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ap:hasAdaptation>
+    <ap:usesMachineLearning rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ap:usesMachineLearning>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#RoomFullOfChords">
+    <rdf:type rdf:resource="http://schema.org/VisualArtwork"/>
+    <rdfs:label>Room Full of Chords</rdfs:label>
+    <schema1:isPartOf rdf:resource="https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#SoundingCanvas"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#hasPhysicalSurface">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPainting"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPhysicalObject">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Augmented Physical Object</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q138713278"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPaintingOntology">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:label>Augmented Painting Ontology</rdfs:label>
+    <rdfs:comment>Ontology defining Augmented Painting as an interactive, adaptive, and AI-driven art form developed by Perceptrum².</rdfs:comment>
+    <schema1:creator rdf:resource="https://www.perceptrum.net/#organization"/>
+    <owl:versionInfo>1.0</owl:versionInfo>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#CalligraphOfAbsence">
+    <rdf:type rdf:resource="http://schema.org/VisualArtwork"/>
+    <rdfs:label>Calligraph of Absence</rdfs:label>
+    <schema1:isPartOf rdf:resource="https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#SoundingCanvas"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#allowsInteraction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPainting"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.perceptrum.net/#organization">
+    <rdf:type rdf:resource="http://schema.org/Organization"/>
+    <schema1:name>Perceptrum²</schema1:name>
+    <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q136547945"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#SilentScore">
+    <rdf:type rdf:resource="http://schema.org/VisualArtwork"/>
+    <rdfs:label>Silent Score</rdfs:label>
+    <schema1:isPartOf rdf:resource="https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#SoundingCanvas"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#hasMemory">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPainting"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#communicatesWith">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPainting"/>
+    <rdfs:range rdf:resource="https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPainting"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#usesMachineLearning">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPainting"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+</rdf:RDF>

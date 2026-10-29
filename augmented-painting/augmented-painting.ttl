@@ -1,4 +1,4 @@
-@prefix ap: <https://www.perceptrum.net/ontology/augmented-painting#> .
+@prefix ap: <https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#> .
 @prefix schema: <http://schema.org/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -36,7 +36,8 @@ ap:AugmentedPainting rdf:type owl:Class ;
     
     Sound generation is NOT mandatory.
     """ ;
-    rdfs:seeAlso <https://www.perceptrum.net/ontology/augmented-painting.html> .
+    rdfs:seeAlso <https://www.perceptrum.net/ontology/augmented-painting.html>, 
+                 <https://www.wikidata.org/wiki/Q137104541> .
 
 ############################################################
 # CORE PROPERTIES
@@ -93,10 +94,11 @@ ap:SoundingCanvas rdf:type ap:AugmentedPainting ;
     rdfs:label "Sounding Canvas" ;
     schema:creator <https://www.perceptrum.net/#organization> ;
     schema:url <https://www.perceptrum.net/works/sounding-canvas.html> ;
-    schema:image <https://commons.wikimedia.org/wiki/Special:FilePath/Sounding-canvas-preview.jpg> ;
-    schema:image <https://www.perceptrum.net/images/score.png> ;
+    schema:image <https://commons.wikimedia.org/wiki/Special:FilePath/Sounding-canvas-preview.jpg> , 
+                 <https://www.perceptrum.net/images/score.png> ;
     rdfs:seeAlso <https://www.wikidata.org/wiki/Q136547884> ;
-    schema:citation <https://doi.org/10.1109/IS264627.2025.11284659> ;
+    schema:citation <https://doi.org/10.1109/IS264627.2025.11284659> ,
+                    <https://www.wikidata.org/wiki/Q137426267> ;
 
     ap:hasPhysicalSurface true ;
     ap:allowsInteraction true ;
