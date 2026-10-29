@@ -1,37 +1,5 @@
 [
   {
-    "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPhysicalObject",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Augmented Physical Object"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://www.wikidata.org/wiki/Q138713278"
-      }
-    ]
-  },
-  {
-    "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#hasAdaptation",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPainting"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
-      }
-    ]
-  },
-  {
     "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#usesMachineLearning",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
@@ -48,142 +16,17 @@
     ]
   },
   {
-    "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#ScriptOfTheUnsaid",
-    "@type": [
-      "http://schema.org/VisualArtwork"
-    ],
-    "http://schema.org/isPartOf": [
-      {
-        "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#SoundingCanvas"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Script of the Unsaid"
-      }
-    ]
-  },
-  {
-    "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPainting",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "\n    An art form that combines a physical painted surface with embedded sensing technologies,\n    artificial intelligence, and machine learning, enabling interactive, adaptive,\n    and networked experiences where touch and visual interaction generate evolving behaviors.\n    \n    Essential properties:\n    - physical painted surface\n    - interaction\n    - memory\n    - adaptation\n    - machine learning\n    - network communication (optional but supported)\n    \n    Sound generation is NOT mandatory.\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Augmented Painting"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://www.perceptrum.net/ontology/augmented-painting.html"
-      },
-      {
-        "@id": "https://www.wikidata.org/wiki/Q137104541"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPhysicalObject"
-      }
-    ]
-  },
-  {
-    "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#hasPhysicalSurface",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPainting"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
-      }
-    ]
-  },
-  {
-    "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#SilentScore",
-    "@type": [
-      "http://schema.org/VisualArtwork"
-    ],
-    "http://schema.org/isPartOf": [
-      {
-        "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#SoundingCanvas"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Silent Score"
-      }
-    ]
-  },
-  {
-    "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#communicatesWith",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPainting"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPainting"
-      }
-    ]
-  },
-  {
-    "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#hasMemory",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPainting"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
-      }
-    ]
-  },
-  {
-    "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#EchoOfLines",
-    "@type": [
-      "http://schema.org/VisualArtwork"
-    ],
-    "http://schema.org/isPartOf": [
-      {
-        "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#SoundingCanvas"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Echo of Lines"
-      }
-    ]
-  },
-  {
     "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#SoundingCanvas",
     "@type": [
-      "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPainting",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPainting"
     ],
     "http://schema.org/citation": [
       {
-        "@id": "https://doi.org/10.1109/IS264627.2025.11284659"
+        "@id": "https://www.wikidata.org/wiki/Q137426267"
       },
       {
-        "@id": "https://www.wikidata.org/wiki/Q137426267"
+        "@id": "https://doi.org/10.1109/IS264627.2025.11284659"
       }
     ],
     "http://schema.org/creator": [
@@ -246,22 +89,6 @@
     ]
   },
   {
-    "@id": "https://www.perceptrum.net/#organization",
-    "@type": [
-      "http://schema.org/Organization"
-    ],
-    "http://schema.org/name": [
-      {
-        "@value": "Perceptrum²"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://www.wikidata.org/wiki/Q136547945"
-      }
-    ]
-  },
-  {
     "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#allowsInteraction",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
@@ -278,39 +105,68 @@
     ]
   },
   {
-    "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#RhythmicInterference",
+    "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPainting",
     "@type": [
-      "http://schema.org/VisualArtwork"
+      "http://www.w3.org/2002/07/owl#Class"
     ],
-    "http://schema.org/isPartOf": [
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#SoundingCanvas"
+        "@value": "\n    An art form that combines a physical painted surface with embedded sensing technologies,\n    artificial intelligence, and machine learning, enabling interactive, adaptive,\n    and networked experiences where touch and visual interaction generate evolving behaviors.\n    \n    Essential properties:\n    - physical painted surface\n    - interaction\n    - memory\n    - adaptation\n    - machine learning\n    - network communication (optional but supported)\n    \n    Sound generation is NOT mandatory.\n    "
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "Rhythmic Interference"
+        "@value": "Augmented Painting"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://www.perceptrum.net/ontology/augmented-painting.html"
+      },
+      {
+        "@id": "https://www.wikidata.org/wiki/Q137104541"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPhysicalObject"
       }
     ]
   },
   {
-    "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#CalligraphOfAbsence",
+    "@id": "https://www.perceptrum.net/#organization",
     "@type": [
-      "http://schema.org/VisualArtwork"
+      "http://schema.org/Organization"
     ],
-    "http://schema.org/isPartOf": [
+    "http://schema.org/name": [
       {
-        "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#SoundingCanvas"
+        "@value": "Perceptrum²"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
       {
-        "@value": "Calligraph of Absence"
+        "@id": "https://www.wikidata.org/wiki/Q136547945"
       }
     ]
   },
   {
-    "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#RoomFullOfChords",
+    "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPhysicalObject",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Augmented Physical Object"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://www.wikidata.org/wiki/Q138713278"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#SilentScore",
     "@type": [
       "http://schema.org/VisualArtwork"
     ],
@@ -321,7 +177,39 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "Room Full of Chords"
+        "@value": "Silent Score"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#ScriptOfTheUnsaid",
+    "@type": [
+      "http://schema.org/VisualArtwork"
+    ],
+    "http://schema.org/isPartOf": [
+      {
+        "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#SoundingCanvas"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Script of the Unsaid"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#hasMemory",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPainting"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
       }
     ]
   },
@@ -348,6 +236,118 @@
     "http://www.w3.org/2002/07/owl#versionInfo": [
       {
         "@value": "1.0"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#EchoOfLines",
+    "@type": [
+      "http://schema.org/VisualArtwork"
+    ],
+    "http://schema.org/isPartOf": [
+      {
+        "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#SoundingCanvas"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Echo of Lines"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#hasPhysicalSurface",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPainting"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#RoomFullOfChords",
+    "@type": [
+      "http://schema.org/VisualArtwork"
+    ],
+    "http://schema.org/isPartOf": [
+      {
+        "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#SoundingCanvas"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Room Full of Chords"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#CalligraphOfAbsence",
+    "@type": [
+      "http://schema.org/VisualArtwork"
+    ],
+    "http://schema.org/isPartOf": [
+      {
+        "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#SoundingCanvas"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Calligraph of Absence"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#communicatesWith",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPainting"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPainting"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#RhythmicInterference",
+    "@type": [
+      "http://schema.org/VisualArtwork"
+    ],
+    "http://schema.org/isPartOf": [
+      {
+        "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#SoundingCanvas"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Rhythmic Interference"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#hasAdaptation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPainting"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
       }
     ]
   }
