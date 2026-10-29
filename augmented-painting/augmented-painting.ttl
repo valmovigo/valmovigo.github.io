@@ -44,18 +44,24 @@ ap:AugmentedPainting rdf:type owl:Class ;
     rdfs:seeAlso <https://www.perceptrum.net/ontology/augmented-painting.html>, 
                  <https://www.wikidata.org/wiki/Q137104541> .
 
-ap:SoundingCanvas rdf:type owl:Class ;
-    rdfs:subClassOf ap:AugmentedPainting ;
+
+ap:SoundingCanvas rdf:type ap:AugmentedPainting, owl:NamedIndividual ;
     rdfs:label "Sounding Canvas" ;
-    rdfs:comment "A specific class of Augmented Paintings that integrate tactile interaction, embedded acoustic systems, and adaptive machine learning to negotiate sound through physical presence." ;
     schema:creator <https://www.perceptrum.net/#organization> ;
     schema:url <https://www.perceptrum.net/works/sounding-canvas.html> ;
     schema:image <https://commons.wikimedia.org/wiki/Special:FilePath/Sounding-canvas-preview.jpg> , 
                  <https://www.perceptrum.net/images/score.png> ;
     rdfs:seeAlso <https://www.wikidata.org/wiki/Q136547884> ;
     schema:citation <https://doi.org/10.1109/IS264627.2025.11284659> ,
-                    <https://www.wikidata.org/wiki/Q137426267> .
+                    <https://www.wikidata.org/wiki/Q137426267> ;
 
+    ap:hasPhysicalSurface true ;
+    ap:allowsInteraction true ;
+    ap:hasMemory true ;
+    ap:hasAdaptation true ;
+    ap:usesMachineLearning true .
+    
+    
 ############################################################
 # CORE PROPERTIES
 ############################################################
@@ -93,60 +99,31 @@ ap:communicatesWith rdf:type owl:ObjectProperty ;
     schema:name "Perceptrum²" ;
     rdfs:seeAlso <https://www.wikidata.org/wiki/Q136547945> .
 
+
 ############################################################
-# WORKS (INSTANCES OF SOUNDING CANVAS)
+# WORKS (INSTANCES PART OF SOUNDING CANVAS)
 ############################################################
 
-ap:SilentScore rdf:type ap:SoundingCanvas, schema:VisualArtwork ;
+ap:SilentScore rdf:type schema:VisualArtwork ;
     rdfs:label "Silent Score" ;
-    schema:creator <https://www.perceptrum.net/#organization> ;
-    ap:hasPhysicalSurface true ;
-    ap:allowsInteraction true ;
-    ap:hasMemory true ;
-    ap:hasAdaptation true ;
-    ap:usesMachineLearning true .
+    schema:isPartOf ap:SoundingCanvas .
 
-ap:EchoOfLines rdf:type ap:SoundingCanvas, schema:VisualArtwork ;
+ap:EchoOfLines rdf:type schema:VisualArtwork ;
     rdfs:label "Echo of Lines" ;
-    schema:creator <https://www.perceptrum.net/#organization> ;
-    ap:hasPhysicalSurface true ;
-    ap:allowsInteraction true ;
-    ap:hasMemory true ;
-    ap:hasAdaptation true ;
-    ap:usesMachineLearning true .
+    schema:isPartOf ap:SoundingCanvas .
 
-ap:CalligraphOfAbsence rdf:type ap:SoundingCanvas, schema:VisualArtwork ;
+ap:CalligraphOfAbsence rdf:type schema:VisualArtwork ;
     rdfs:label "Calligraph of Absence" ;
-    schema:creator <https://www.perceptrum.net/#organization> ;
-    ap:hasPhysicalSurface true ;
-    ap:allowsInteraction true ;
-    ap:hasMemory true ;
-    ap:hasAdaptation true ;
-    ap:usesMachineLearning true .
+    schema:isPartOf ap:SoundingCanvas .
 
-ap:RoomFullOfChords rdf:type ap:SoundingCanvas, schema:VisualArtwork ;
+ap:RoomFullOfChords rdf:type schema:VisualArtwork ;
     rdfs:label "Room Full of Chords" ;
-    schema:creator <https://www.perceptrum.net/#organization> ;
-    ap:hasPhysicalSurface true ;
-    ap:allowsInteraction true ;
-    ap:hasMemory true ;
-    ap:hasAdaptation true ;
-    ap:usesMachineLearning true .
+    schema:isPartOf ap:SoundingCanvas .
 
-ap:ScriptOfTheUnsaid rdf:type ap:SoundingCanvas, schema:VisualArtwork ;
+ap:ScriptOfTheUnsaid rdf:type schema:VisualArtwork ;
     rdfs:label "Script of the Unsaid" ;
-    schema:creator <https://www.perceptrum.net/#organization> ;
-    ap:hasPhysicalSurface true ;
-    ap:allowsInteraction true ;
-    ap:hasMemory true ;
-    ap:hasAdaptation true ;
-    ap:usesMachineLearning true .
+    schema:isPartOf ap:SoundingCanvas .
 
-ap:RhythmicInterference rdf:type ap:SoundingCanvas, schema:VisualArtwork ;
+ap:RhythmicInterference rdf:type schema:VisualArtwork ;
     rdfs:label "Rhythmic Interference" ;
-    schema:creator <https://www.perceptrum.net/#organization> ;
-    ap:hasPhysicalSurface true ;
-    ap:allowsInteraction true ;
-    ap:hasMemory true ;
-    ap:hasAdaptation true ;
-    ap:usesMachineLearning true .
+    schema:isPartOf ap:SoundingCanvas .
