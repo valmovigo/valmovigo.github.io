@@ -130,6 +130,12 @@
 </url>
     
 <url>
+  <loc>https://www.perceptrum.net/big-events/berlin-science-week-2026/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+    
+<url>
   <loc>https://www.perceptrum.net/big-events/entangled-variations/</loc>
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
