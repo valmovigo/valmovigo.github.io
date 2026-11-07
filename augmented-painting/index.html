@@ -4,6 +4,34 @@
   <title>
    Augmented Painting Ontology
   </title>
+  
+    <meta name="description" content="Explore the Augmented Painting Ontology by Perceptrum²: a formal semantic model defining Augmented Painting as a subclass of Augmented Physical Object, with its classes, properties, and relationships.">
+
+    <meta name="keywords" content="Augmented Painting Ontology, Augmented Painting, Perceptrum, ontology, semantic web, OWL, RDF, knowledge representation, Augmented Physical Object, interactive art, machine learning, digital art ontology">
+
+    <meta name="author" content="Perceptrum²">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="en">
+
+    <link rel="canonical" href="https://www.perceptrum.net/augmented-painting/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Perceptrum²">
+    <meta property="og:title" content="Augmented Painting Ontology | Perceptrum²">
+    <meta property="og:description" content="The formal ontology defining Augmented Painting, its conceptual hierarchy, classes, properties, and relationships within the Perceptrum² framework.">
+    <meta property="og:url" content="https://www.perceptrum.net/augmented-painting/">
+    <meta property="og:image" content="https://www.perceptrum.net/images/augmentation-perceptrum.png">
+    <meta property="og:image:alt" content="Conceptual diagram of physical augmentation in the Perceptrum² framework">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Augmented Painting Ontology | Perceptrum²">
+    <meta name="twitter:description" content="A formal semantic model of Augmented Painting developed by Perceptrum².">
+    <meta name="twitter:image" content="https://www.perceptrum.net/images/augmentation-perceptrum.png">
+    <meta name="twitter:image:alt" content="Conceptual diagram of physical augmentation in the Perceptrum² framework">
+
   <style>
    #pylode {
             position: fixed;
@@ -296,26 +324,79 @@
   <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhklEQVQ4jbWPzStEURjG3yQLirlGKUnKFO45Z+SjmXvnnmthQcpCoVhYmD/AwmJiI3OvZuZc2U3UlKU0/gAslMw9JgvhHxAr2fko7r0jHSsl+TgbTz2Lt5731/MASEiJW9ONml2QyX6rsGalmnT74v8BDf12hxJfpV8d1uwNKUBYszabdFv84L8B9X0rESVmmUup2fme0cVhJWaZHw4NWL1SewEAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ9Hn31OgoATL+CkLDGB5H1OKj4nFd/FBxUXJ0UZNb4edw/6nLyJXaj5FeCVyPLNIVmYK8TG1IwWb16L1gEACAFV90ftoT8bdOX0EeyY99gxBXZMgRz6qGb1KantAACI0UvE6F5XJqEjpsdURouI0Vt5gGOUkUNnPu7ObGIIMfNaGqDmjDRi9FZldF1lRgYzeqUyeoiY4ag5Iy3RgOYRM8+/M2bG8efsO4hGrpmJseyMAAAAAElFTkSuQmCC" rel="icon" sizes="16x16" type="image/png"/>
   <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC40lEQVRYhe2UT0hUQRzHp6Iss1B3VZKIDbbdfW9mnoi4f3zzjkJQeOgS0SEIb1EWBGGlLLu460zQPQM1unUIIjA6rfpm6ZAhHjoIRVQUFUlEbG+euTsdXG1d3VL3bVD4g+9h+L35fT/8fvN7ADgY9aHY5fpIvK82HO9ysu66wxWOzbkjcekKx0a2ALYA/n2AGi3a6ArFezcidziecQygNhhrcUficjP6PwBqtGijKxy/thnVBePHywYoDsFhl53GV8SEcsTx4usCMLUewTVpc23BNvEzm6Neyf1+KcG2vwqwUjgrOJq2JmHftwmkVBRGTvncFodnbI7vChO/FRznCmHsNM7aHM9Yk7Df5iqsLMw9sMNOK2g+jS4IEz0UJv4iuJZb2RltWnB4UZqH6ioGAgAAGe5vtiZhtzDx7OoRadLmeM7m6IRjhnLMW2Vx1bA5GhAmnhIcz6/xNj4Ujsky8UspwfayjDPjsF2Y6L7N8Vzx/BfP+KPg6LbgSqd8DnfJW2CnbaLhfH5ephpqygJYvQU4Z3P82TLRsDDhUTnmrSq+Y3N0Mg+Xldy/zwEAnLMWZ3pHpNExmfLs/t0dOdVcbT0JeKxUwFP2VljjqiE47Jp53LTXNxhsUZjerTByXWX6VZWRs/4bIQ2ACv+UAomgDzLCISNZxAxZKMhIDjLy1JfsaK+I+eGBUBNk5E2x8RogX/PdcDZUqieWTSh5D6nOVKqfhoycUmlHFFIyu5RXqf7AcQDISCpv/tqbMBqK883RtmpISRoxQyJKPgGn3wNk5NEigDFa6hslqV/Kj+FdBQD0bshIDlKSLlVcoWQo36UhR80BAMB73lulMn0EMpJTqD6qJiOt3mho/8GbkT2BZNgDB/V+RI0fkOrT3kRIVQbaDizJm2hdNbINBxwk5xAj3yEjuV9rZ1iIkgxixkLBA83mz8uCjLwoGwAx0vOnFSy5mtR4VTaAQvVORMnwZgSpzkrV/QmdE2tKe46+MQAAAABJRU5ErkJggg==" rel="icon" sizes="32x32" type="image/png"/>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-  <script id="schema.org" type="application/ld+json">
-   [
-  {
-    "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPaintingOntology",
-    "@type": [
-      "https://schema.org/DefinedTermSet"
-    ],
-    "https://schema.org/description": [
-      {
-        "@value": "Ontology defining Augmented Painting as an interactive, adaptive, and AI-driven art form developed by Perceptrum²."
-      }
-    ],
-    "https://schema.org/name": [
-      {
-        "@value": "Augmented Painting Ontology"
-      }
-    ]
-  }
-]
-  </script>
+  
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebSite",
+                "@id": "https://www.perceptrum.net/#website",
+                "url": "https://www.perceptrum.net/",
+                "name": "Perceptrum²"
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://www.perceptrum.net/augmented-painting/#ontology-page",
+                "url": "https://www.perceptrum.net/augmented-painting/",
+                "name": "Augmented Painting Ontology",
+                "description": "Formal semantic documentation of Augmented Painting, including its class hierarchy, object properties, datatype properties, and instances.",
+                "inLanguage": "en",
+                "isPartOf": {
+                    "@id": "https://www.perceptrum.net/#website"
+                },
+                "about": {
+                    "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPainting"
+                },
+                "mainEntity": {
+                    "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPaintingOntology"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "@id": "https://www.wikidata.org/entity/Q136547945",
+                    "name": "Perceptrum²",
+                    "url": "https://www.perceptrum.net/"
+                }
+            },
+            {
+                "@type": "DefinedTermSet",
+                "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPaintingOntology",
+                "name": "Augmented Painting Ontology",
+                "description": "Ontology defining Augmented Painting as an interactive and adaptive art form developed by Perceptrum².",
+                "url": "https://www.perceptrum.net/augmented-painting/",
+                "version": "1.0",
+                "publisher": {
+                    "@id": "https://www.wikidata.org/entity/Q136547945"
+                },
+                "hasDefinedTerm": [
+                    {
+                        "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPhysicalObject"
+                    },
+                    {
+                        "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPainting"
+                    }
+                ]
+            },
+            {
+                "@type": "DefinedTerm",
+                "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPainting",
+                "name": "Augmented Painting",
+                "description": "An art form combining a physical painted surface with embedded sensing technologies, artificial intelligence, and machine learning, enabling interactive, adaptive, and networked experiences.",
+                "sameAs": "https://www.wikidata.org/entity/Q137104541",
+                "inDefinedTermSet": {
+                    "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPaintingOntology"
+                }
+            },
+            {
+                "@type": "DefinedTerm",
+                "@id": "https://www.perceptrum.net/augmented-painting/augmented-painting.ttl#AugmentedPhysicalObject",
+                "name": "Augmented Physical Object",
+                "description": "The parent class of Augmented Painting in the Perceptrum² ontology."
+            }
+        ]
+    }
+    </script>
  </head>
  <body>
   <div id="content">
